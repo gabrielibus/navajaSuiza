@@ -10,7 +10,7 @@ Hola mundo!
 choco install office2019proplus --params '/Language:es-es'
 
 ## Office Standar Volume 2019 mínimo x64
-choco install microsoft-office-deployment --params="'/Language:es-es /64bit /Product:Standard2019Volume /Exclude=Publisher,Outlook,Lync,Groove,Access'" --yes --all
+choco install microsoft-office-deployment --params="'/Language:es-es /64bit /Product:Standard2019Volume /Exclude:Publisher,Outlook,Lync,Groove,Access'" --yes --all
 
 ### Otros instaladores de choco
 zoom  
