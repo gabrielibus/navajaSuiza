@@ -33,3 +33,5 @@ choco install crystaldiskmark
 choco install malawarebytes  
 choco install adwcleaner  
 
+## Power Toys keyboard binding
+{"remapKeys":{"inProcess":[]},"remapShortcuts":{"global":[{"originalKeys":"164;73","newRemapKeys":"46"},{"originalKeys":"164;74","newRemapKeys":"37"},{"originalKeys":"164;75","newRemapKeys":"40"},{"originalKeys":"164;76","newRemapKeys":"38"},{"originalKeys":"164;79","newRemapKeys":"46"},{"originalKeys":"164;80","newRemapKeys":"36"},{"originalKeys":"164;85","newRemapKeys":"8"},{"originalKeys":"164;186","newRemapKeys":"39"},{"originalKeys":"164;188","newRemapKeys":"174"},{"originalKeys":"164;190","newRemapKeys":"175"},{"originalKeys":"164;191","newRemapKeys":"173"}],"appSpecific":[]}}
