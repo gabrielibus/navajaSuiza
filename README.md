@@ -19,19 +19,19 @@ choco install microsoft-office-deployment --params="'/Language:es-es /64bit /Pro
 ### Instalación de todos los básicos
 choco install zoom 7zip googlechrome anydesk.install adobereader vlc --yes autohotkey pandafreeantivirus --ignore-checksum --yes && choco uninstall autohotkey --force --yes --all
 
--GOOGLE DRIVE: choco install google-drive-file-stream
--ZOOM: choco install zoom  
--TEAMS: choco install microsoft-teams  
--CHROME: choco install googlechrome  
--PANDA ANTIVIRUS: choco install pandafreeantivirus --ignore-checksum  
--7ZIP: choco install 7zip  
--FURMARK: choco install furmark  
--CRYSTAL DISK INFO: choco install crystaldiskinfo
--CRYSTAL DISK MARK: choco install crystaldiskmark
--MALWAREBYTES: choco install malawarebytes  
--ADWCLEANER: choco install adwcleaner
--AUTOCAD: choco install autocad
-___
+-GOOGLE DRIVE: choco install google-drive-file-stream  
+-ZOOM: choco install zoom    
+-TEAMS: choco install microsoft-teams     
+-CHROME: choco install googlechrome    
+-PANDA ANTIVIRUS: choco install pandafreeantivirus --ignore-checksum    
+-7ZIP: choco install 7zip    
+-FURMARK: choco install furmark    
+-CRYSTAL DISK INFO: choco install crystaldiskinfo  
+-CRYSTAL DISK MARK: choco install crystaldiskmark  
+-MALWAREBYTES: choco install malawarebytes    
+-ADWCLEANER: choco install adwcleaner  
+-AUTOCAD: choco install autocad  
+___  
 ## ENLACES RÁPIDOS
 DESCATIVAR TELEMETRÍA EN WINDOWS
 https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/desactivarTelemetria.bat
