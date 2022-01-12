@@ -33,7 +33,7 @@ choco install zoom 7zip googlechrome anydesk.install adobereader vlc --yes autoh
 -AUTOCAD: choco install autocad  
 ___  
 ## ENLACES RÁPIDOS
-DESCATIVAR TELEMETRÍA EN WINDOWS
-https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/desactivarTelemetria.bat
-ACTIVAR WIN Y OFFICE
+### DESCATIVAR TELEMETRÍA EN WINDOWS   
+https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/desactivarTelemetria.bat   
+### ACTIVAR WIN Y OFFICE   
 https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd
