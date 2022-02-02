@@ -17,7 +17,7 @@ choco install office2019proplus --params '/Language:es-es'
 choco install microsoft-office-deployment --params="'/Language:es-es /64bit /Product:Standard2019Volume /Exclude:Publisher,Outlook,Lync,Groove,Access'" --yes --all
 
 ### Office Project Pro 2019
-choco install office2019proplus --params "'/Language:es-es /64bit /Product:ProjectPro2019Volume'"
+choco install microsoft-office-deployment --params="'/Language:es-es /64bit /Product:ProjectPro2019Volume'" --yes --all
 
 ### Instalación de todos los básicos
 choco install zoom 7zip googlechrome anydesk.install adobereader vlc --yes autohotkey pandafreeantivirus --ignore-checksum --yes && choco uninstall autohotkey --force --yes --all
