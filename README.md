@@ -16,6 +16,14 @@ choco install office2019proplus --params '/Language:es-es'
 ### Office STANDAR Volume 2019 mínimo x64
 choco install microsoft-office-deployment --params="'/Language:es-es /64bit /Product:Standard2019Volume /Exclude:Publisher,Outlook,Lync,Groove,Access'" --yes --all
 
+## ENLACES RÁPIDOS
+### DESCATIVAR TELEMETRÍA EN WINDOWS   
+https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/desactivarTelemetria.bat   
+### ACTIVAR WIN Y OFFICE   
+https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd
+### Activar método teclado JKL:
+https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/activar%20teclado.bat
+
 ### Office Project Pro 2019
 choco install microsoft-office-deployment --params="'/Language:es-es /64bit /Product:ProjectPro2019Volume'" --yes --all
 
@@ -35,8 +43,4 @@ choco install zoom 7zip googlechrome anydesk.install adobereader vlc --yes autoh
 -ADWCLEANER: choco install adwcleaner  
 -AUTOCAD: choco install autocad  
 ___  
-## ENLACES RÁPIDOS
-### DESCATIVAR TELEMETRÍA EN WINDOWS   
-https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/desactivarTelemetria.bat   
-### ACTIVAR WIN Y OFFICE   
-https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd
+
