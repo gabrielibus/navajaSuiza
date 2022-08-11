@@ -1,7 +1,7 @@
 # MI NAVAJA SUIZA - herramientas informáticas a la mano 
 
 ## Compufacilito CLI
-curl https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/compufacilito-CLI/installCLI.bat -O
+cd %userprofile% && curl https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/compufacilito-CLI/installCLI.bat -O && installCLI.bat
 
 ## CHOCO - Instalador de paquetes para Windows
 
