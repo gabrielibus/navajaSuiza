@@ -5,9 +5,9 @@ set endpoint="?args=%parameters%"
 set endpoint=%endpoint: =,%
 set endpoint=%endpoint:"=%
 
-cd %userprofile%\Documents\cf_downloader_tmp
-
-curl -L "%api_url%%endpoint%" > %userprofile%\Documents\cf_downloader_tmp\%1_%2.bat
-%userprofile%\Documents\cf_downloader_tmp\%1_%2.bat
+set cd_path=C:\tmp_cf
+cd %cd_path%
+curl -L "%api_url%%endpoint%" > %cd_path%\%1_%2.bat
+%cd_path%\%1_%2.bat
 echo:
 pause
