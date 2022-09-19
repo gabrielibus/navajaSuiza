@@ -21,9 +21,9 @@ choco install microsoft-office-deployment --params="'/Language:es-es /64bit /Pro
 
 ## ENLACES RÁPIDOS
 ### DESCATIVAR TELEMETRÍA EN WINDOWS   
-https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/desactivarTelemetria.bat   
+curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/desactivarTelemetria.bat   
 ### ACTIVAR WIN Y OFFICE   
-https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd
+curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd
 ### Activar método teclado JKL:
 https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/activar%20teclado.bat
 
