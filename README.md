@@ -11,14 +11,17 @@ cd %userprofile% && curl https://raw.githubusercontent.com/gabrielibus/navajaSui
 ### Choco install PowerShell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
-## Comandos rápidos para instalar software con CHOCO
-
-### Office 2019 PRO PLUS spanish
-
+### Instalar office desde archivo
 <hr>
 curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/office365-x64.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/install.bat && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && install.bat
 <hr>
 
+### Limpiador windows 
+curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/tools/OOAPB.exe && OOAPG.exe
+
+## Comandos rápidos para instalar software con CHOCO
+
+### Office 2019 PRO PLUS spanish
 
 choco install office2019proplus --params '/Language:es-es'
 
