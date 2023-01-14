@@ -14,6 +14,15 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ## Comandos rápidos para instalar software con CHOCO
 
 ### Office 2019 PRO PLUS spanish
+
+<hr>
+curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/office365-x64.xml
+curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/install.bat
+curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe
+install.bat
+<hr>
+
+
 choco install office2019proplus --params '/Language:es-es'
 
 ### Office STANDAR Volume 2019 mínimo x64
