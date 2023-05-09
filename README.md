@@ -56,3 +56,9 @@ choco install zoom 7zip googlechrome anydesk.install adobereader vlc --yes autoh
 -AUTOCAD: choco install autocad  
 ___  
 
+
+### DESINSTALAR office desde archivo
+<hr>
+curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.bat && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && uninstall.bat
+<hr>
+
