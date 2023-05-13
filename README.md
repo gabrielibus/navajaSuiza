@@ -58,7 +58,12 @@ ___
 
 
 ### DESINSTALAR office desde archivo
+Este comando permite desinstalar la mayoría de las versiones de office desde la línea de comandos.
 <hr>
 curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.bat && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && uninstall.bat
 <hr>
+
+### REVISIÓN VIRUS EN WINDOWS
+cd C:/ProgramData/Microsoft/Windows Defender/Platform/4.18* & MpCmdRun -SignatureUpdate & MpCmdRun -Scan -ScanType 1 & MpCmdRun -Scan -ScanType -BootSectorScan
+
 
