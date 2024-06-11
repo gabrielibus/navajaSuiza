@@ -2,11 +2,29 @@
 
 #  Office instaladorFacilito
 ## Office All in One - Quita cualquier versión de Office en Windows desde un CMD e instala Office 2019 Standar 😎
-- 🧼 Desinstala cualquier versión o programa de Office instalada en Windows
-- 🖊️ Instala Office 2019 Standar x64 (Word, Excel, Outlook y PowerPoint)
-- 🏴‍☠️ Descarga el activador
+- <a href="#a">🧼 Desinstala cualquier versión o programa de Office instalada en Windows</a>
+- <a href="#b">🖊️ Instala Office 2019 Standar x64 (Word, Excel, Outlook y PowerPoint)</a>
+- <a href="#c">🏴‍☠️ Descarga el activador</a>
 ```
 curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/office365-x64.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/install.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.xml && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd && uninstall.bat && install.bat && explorer .
+```
+
+<h2 id="b">🧼 Desinstala cualquier versión o programa de Office instalada en Windows</h2>
+
+```
+curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.xml && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && uninstall.bat
+```
+
+<h2 id="c">🖊️ Instala Office 2019 Standar x64 (Word, Excel, Outlook y PowerPoint)</h2>
+
+```
+curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/office365-x64.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/install.bat && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && install.bat
+```
+
+<h2 id="a">🏴‍☠️ Descarga el activador Office</h2>
+
+```
+curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd && explorer .
 ```
 
 <br>
@@ -46,6 +64,10 @@ curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/
 ```
 cd C:/ProgramData/Microsoft/Windows Defender/Platform/4.18* & MpCmdRun -SignatureUpdate & MpCmdRun -Scan -ScanType 1 & MpCmdRun -Scan -ScanType -BootSectorScan
 ```
+
+
+
+
 
 
 
