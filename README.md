@@ -1,9 +1,42 @@
 # MI NAVAJA SUIZA - herramientas informáticas a la mano 
 
-# 🧼 Desinstalar Office, reinstalar 2019 y activar
+# 🧼 Office
+## Office Todo en Uno
+Este script se encarga de Office de un solo calvazo 👋🏽
+- Desinstala cualquier versión o programa de Office instalada en Windows
+- Instala Office 2019 Standar x64 (Word, Excel, Outlook y PowerPoint)
+- Descarga el activado y abre la carpeta contenedora
 ```
 curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.bat && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && uninstall.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/office365-x64.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/install.bat && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && install.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd && explorer .
 ```
+
+# 🧼 Office Windows
+Office de un solo calvazo 👋🏽
+- Desinstala cualquier versión o programa de Office instalada previamente
+- Instala Office 2019 Standar x64 (Word, Excel, Outlook y PowerPoint)
+- Descarga el activado y abre la carpeta contenedora
+```
+curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.bat && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && uninstall.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/office365-x64.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/install.bat && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && install.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd && explorer .
+```
+
+# 🪟 Básicos de Windows
+🍫 Choco: 
+```
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+```
+🥑 Todo menos Office con Choco:
+```
+choco install zoom 7zip googlechrome anydesk.install rustdesk adobereader vlc --yes autohotkey pandafreeantivirus --ignore-checksum --yes && choco uninstall autohotkey --force --yes --all
+```
+
+🍫 + 🥑 Instalar Choco e instalar los básicos
+```
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin" && choco install zoom 7zip googlechrome anydesk.install rustdesk adobereader vlc --yes autohotkey pandafreeantivirus --ignore-checksum --yes && choco uninstall autohotkey --force --yes --all && exit
+```
+
+
+
+------------------
 
 ## Compufacilito CLI
 cd %userprofile% && curl https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/compufacilito-CLI/installCLI.bat -O && installCLI.bat
@@ -25,10 +58,6 @@ curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20
 curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/tools/OOAPB.exe && OOAPG.exe
 
 ## Comandos rápidos para instalar software con CHOCO
-
-### Office 2019 PRO PLUS spanish
-
-choco install office2019proplus --params '/Language:es-es'
 
 ### Office STANDAR Volume 2019 mínimo x64
 choco install microsoft-office-deployment --params="'/Language:es-es /64bit /Product:Standard2019Volume /Exclude:Publisher,Outlook,Lync,Groove,Access'" --yes --all
