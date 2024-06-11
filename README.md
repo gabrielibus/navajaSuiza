@@ -1,5 +1,10 @@
 # MI NAVAJA SUIZA - herramientas informáticas a la mano 
 
+# 🧼 Desinstalar Office, reinstalar 2019 y activar
+```
+curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.bat && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && uninstall.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/office365-x64.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/install.bat && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && install.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd && explorer .
+```
+
 ## Compufacilito CLI
 cd %userprofile% && curl https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/compufacilito-CLI/installCLI.bat -O && installCLI.bat
 
