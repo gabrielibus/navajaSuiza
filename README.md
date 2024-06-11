@@ -35,13 +35,18 @@ curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20
 choco install zoom 7zip googlechrome anydesk.install rustdesk adobereader vlc --yes autohotkey pandafreeantivirus --ignore-checksum --yes && choco uninstall autohotkey --force --yes --all
 ```
 
+
+
 ## 🧼 Limpiador Windows 
 ```
 curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/tools/OOAPB.exe && OOAPG.exe
 ```
-<hr>
 
 ## 🦠 Revisar virus en Windows con CMD
+```
 cd C:/ProgramData/Microsoft/Windows Defender/Platform/4.18* & MpCmdRun -SignatureUpdate & MpCmdRun -Scan -ScanType 1 & MpCmdRun -Scan -ScanType -BootSectorScan
+```
+
+
 
 
