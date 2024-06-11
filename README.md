@@ -1,103 +1,47 @@
-# MI NAVAJA SUIZA - herramientas informáticas a la mano 
+# 🧰 NAVAJA SUIZA - herramientas informáticas facilito 
 
-# 🧼 Office
-## Office Todo en Uno
-Este script se encarga de Office de un solo calvazo 👋🏽
-- Desinstala cualquier versión o programa de Office instalada en Windows
-- Instala Office 2019 Standar x64 (Word, Excel, Outlook y PowerPoint)
-- Descarga el activado y abre la carpeta contenedora
+#  Office instaladorFacilito
+## Office All in One - Quita cualquier versión de Office en Windows desde un CMD e instala Office 2019 Standar 😎
+- 🧼 Desinstala cualquier versión o programa de Office instalada en Windows
+- 🖊️ Instala Office 2019 Standar x64 (Word, Excel, Outlook y PowerPoint)
+- 🏴‍☠️ Descarga el activador
 ```
-curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.bat && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && uninstall.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/office365-x64.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/install.bat && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && install.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd && explorer .
-```
-
-# 🧼 Office Windows
-Office de un solo calvazo 👋🏽
-- Desinstala cualquier versión o programa de Office instalada previamente
-- Instala Office 2019 Standar x64 (Word, Excel, Outlook y PowerPoint)
-- Descarga el activado y abre la carpeta contenedora
-```
-curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.bat && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && uninstall.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/office365-x64.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/install.bat && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && install.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd && explorer .
+curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/office365-x64.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/install.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.xml && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd && uninstall.bat && install.bat && explorer .
 ```
 
+<br>
+<br>
+
+---
 # 🪟 Básicos de Windows
-🍫 Choco: 
-```
-@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-```
-🥑 Todo menos Office con Choco:
-```
-choco install zoom 7zip googlechrome anydesk.install rustdesk adobereader vlc --yes autohotkey pandafreeantivirus --ignore-checksum --yes && choco uninstall autohotkey --force --yes --all
-```
-
-🍫 + 🥑 Instalar Choco e instalar los básicos
+🍫 + 🥑 Choco y básicos de Windows con CMD (Ejecutar como Administrador)
 ```
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin" && choco install zoom 7zip googlechrome anydesk.install rustdesk adobereader vlc --yes autohotkey pandafreeantivirus --ignore-checksum --yes && choco uninstall autohotkey --force --yes --all && exit
 ```
 
-
-
-------------------
-
-## Compufacilito CLI
-cd %userprofile% && curl https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/compufacilito-CLI/installCLI.bat -O && installCLI.bat
-
-## CHOCO - Instalador de paquetes para Windows
-
-### Choco para CMD:
+🍫 Instalar solo Choco (Ejecutar como Administrador)
+```
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+```
+🥑 Básicos de Windows con Choco:
+- Zoom
+- 7Zip
+- Anydesk
+- RustDesk
+- Adobe reader
+- Vlc
+- Panda Free Antivirus
+```
+choco install zoom 7zip googlechrome anydesk.install rustdesk adobereader vlc --yes autohotkey pandafreeantivirus --ignore-checksum --yes && choco uninstall autohotkey --force --yes --all
+```
 
-### Choco install PowerShell
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-
-### Instalar office desde archivo
-<hr>
-curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/office365-x64.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/install.bat && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && install.bat
-<hr>
-
-### Limpiador windows 
+## 🧼 Limpiador Windows 
+```
 curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/tools/OOAPB.exe && OOAPG.exe
-
-## Comandos rápidos para instalar software con CHOCO
-
-### Office STANDAR Volume 2019 mínimo x64
-choco install microsoft-office-deployment --params="'/Language:es-es /64bit /Product:Standard2019Volume /Exclude:Publisher,Outlook,Lync,Groove,Access'" --yes --all
-
-## ENLACES RÁPIDOS
-### DESCATIVAR TELEMETRÍA EN WINDOWS   
-curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/desactivarTelemetria.bat   
-### ACTIVAR WIN Y OFFICE   
-curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd
-### Activar método teclado JKL:
-https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/activar%20teclado.bat
-
-### Office Project Pro 2019
-choco install microsoft-office-deployment --params="'/Language:es-es /64bit /Product:ProjectPro2019Volume'" --yes --all
-
-### Instalación de todos los básicos
-choco install zoom 7zip googlechrome anydesk.install adobereader vlc --yes autohotkey pandafreeantivirus --ignore-checksum --yes && choco uninstall autohotkey --force --yes --all
-
--GOOGLE DRIVE: choco install google-drive-file-stream  
--ZOOM: choco install zoom    
--TEAMS: choco install microsoft-teams     
--CHROME: choco install googlechrome    
--PANDA ANTIVIRUS: choco install pandafreeantivirus --ignore-checksum    
--7ZIP: choco install 7zip    
--FURMARK: choco install furmark    
--CRYSTAL DISK INFO: choco install crystaldiskinfo  
--CRYSTAL DISK MARK: choco install crystaldiskmark  
--MALWAREBYTES: choco install malawarebytes    
--ADWCLEANER: choco install adwcleaner  
--AUTOCAD: choco install autocad  
-___  
-
-
-### DESINSTALAR office desde archivo
-Este comando permite desinstalar la mayoría de las versiones de office desde la línea de comandos.
-<hr>
-curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.bat && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && uninstall.bat
+```
 <hr>
 
-### REVISIÓN VIRUS EN WINDOWS
+## 🦠 Revisar virus en Windows con CMD
 cd C:/ProgramData/Microsoft/Windows Defender/Platform/4.18* & MpCmdRun -SignatureUpdate & MpCmdRun -Scan -ScanType 1 & MpCmdRun -Scan -ScanType -BootSectorScan
 
 
