@@ -1,24 +1,13 @@
 @echo off
 
-:======================================================================================================================================================
-:Thanks to abbodi1406 for SppExtComObjPatcher-kms\2-Activate-Local.cmd, which used as base in this script 
-:Thanks to rpo for the Great and Continued help in improving this script.
-:Thanks to AR_Alex for the ideas and suggestions.
-:======================================================================================================================================================
-
-::===========================================================================
-fsutil dirty query %systemdrive%  >nul 2>&1 || (
-echo ==== ERROR ====
-echo This script require administrator privileges.
-echo To do so, right click on this script and select 'Run as administrator'
-echo.
-echo Press any key to exit...
-pause >nul
-exit
+net session >nul 2>&1
+if %errorLevel% neq 0 (
+    echo Solicitud de privilegios de administrador...
+    powershell -command "Start-Process '%~f0' -Verb runAs"
+    exit /b
 )
-::===========================================================================
 
-color 0a
+color a
 mode con cols=98 lines=30
 title Online KMS Activation Script v6.0
 setlocal EnableExtensions EnableDelayedExpansion
