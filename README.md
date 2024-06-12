@@ -73,6 +73,7 @@ powershell -command "Start-Process cmd -ArgumentList '/k powershell -NoProfile -
 <br>
 <h2 id="choco">
 🍫 Instalar Choco con CMD:</h2>
+
 ```
 powershell -command "Start-Process cmd -ArgumentList '/k powershell -NoProfile -ExecutionPolicy Bypass -Command \"[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString(''https://chocolatey.org/install.ps1'')); $env:PATH += '';'' + [System.Environment]::GetFolderPath(''CommonApplicationData'') + ''\chocolatey\bin''; exit\"' -Verb runAs"
 ```
@@ -84,17 +85,14 @@ powershell -command "Start-Process cmd -ArgumentList '/k powershell -NoProfile -
 powershell -command "Start-Process cmd -ArgumentList '/k choco install zoom 7zip googlechrome anydesk.install rustdesk adobereader vlc --yes autohotkey pandafreeantivirus --ignore-checksum --yes && choco uninstall autohotkey --force --yes --all; exit\"' -Verb runAs"
 ```
 
-
-
 <h2 id="Limpiador">🧼 Limpiador Windows</h2>
+
 ```
 cd %USERPROFILE%\Downloads && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/tools/OOAPB.exe && OOAPG.exe
 ```
 
 <h2 id="Desinfección">🦠 Revisar virus en Windows con CMD</h2>
+
 ```
 cd C:/ProgramData/Microsoft/Windows Defender/Platform/4.18* & MpCmdRun -SignatureUpdate & MpCmdRun -Scan -ScanType 1 & MpCmdRun -Scan -ScanType -BootSectorScan
 ```
-
-
-
