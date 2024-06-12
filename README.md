@@ -5,6 +5,9 @@
 - <a href="#a">🧼 Desinstala cualquier versión o programa de Office instalada en Windows</a>
 - <a href="#b">🖊️ Instala Office 2019 Standar x64 (Word, Excel, Outlook y PowerPoint)</a>
 - <a href="#c">🏴‍☠️ Descarga el activador</a>
+
+
+👇🏽 Este script hace todo lo de arriba ☝🏽 (para pegar en CMD de Windows)
 ```
 curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/office365-x64.xml && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/install.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.bat && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20installer/uninstall.xml && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/Office%20installer/setup.exe && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd && uninstall.bat && install.bat && explorer .
 ```
@@ -24,7 +27,8 @@ curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/Office%20
 <h2 id="a">🏴‍☠️ Descarga el activador Office</h2>
 
 ```
-curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd && explorer .
+curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/office_upd.cmd && office_upd.cmd
+
 ```
 
 <br>
@@ -64,11 +68,3 @@ curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/
 ```
 cd C:/ProgramData/Microsoft/Windows Defender/Platform/4.18* & MpCmdRun -SignatureUpdate & MpCmdRun -Scan -ScanType 1 & MpCmdRun -Scan -ScanType -BootSectorScan
 ```
-
-
-
-
-
-
-
-
