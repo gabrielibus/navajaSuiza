@@ -4,7 +4,7 @@
 
 - <a href="#uninstallOffice">🧼 Desinstala cualquier versión o programa de Office instalada en Windows</a>
 - <a href="#installOffice">🖊️ Instala Office 2019 Standar x64 (Word, Excel, Outlook y PowerPoint)</a>
-- <a href="#officeKey">🏴‍☠️ Descarga el activador Office</a>
+- <a href="#officeKey">🏴‍☠️ Activar Office</a>
 
 <a href="#chocoAIO"><h2 >
 🍫 + 🥑 Choco y básicos de Windows con CMD</h2></a>
@@ -29,7 +29,7 @@
 
 - <a href="#uninstallOffice">🧼 Desinstala cualquier versión o programa de Office instalada en Windows</a>
 - <a href="#installOffice">🖊️ Instala Office 2019 Standar x64 (Word, Excel, Outlook y PowerPoint)</a>
-- <a href="#officeKey">🏴‍☠️ Descarga el activador</a>
+- <a href="#officeKey">🏴‍☠️ Activar Office</a>
 
 
 👇🏽 Este script hace todo lo de arriba ☝🏽 (para pegar en CMD de Windows)
