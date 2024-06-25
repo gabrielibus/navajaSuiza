@@ -98,18 +98,16 @@ powershell -command "Start-Process cmd -ArgumentList '/k choco install zoom 7zip
 cd %USERPROFILE%\Downloads && curl -O --location --request GET https://github.com/gabrielibus/navajaSuiza/raw/main/tools/OOAPB.exe && OOAPG.exe
 ```
 
+<h2 id="Desinfección">🦠 Revisar virus en Windows con CMD</h2>
+
+```
+cd C:/ProgramData/Microsoft/Windows Defender/Platform/4.18* & MpCmdRun -SignatureUpdate & MpCmdRun -Scan -ScanType 1 & MpCmdRun -Scan -ScanType -BootSectorScan
+```
 
 🍎 Apple
-
 <h2 id="macOffice">
 Office 2016 en Mac </h2> 
 
 ```
 cd ~/Downloads && curl -O https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.27.19071500_Installer.pkg && curl -O https://gist.github.com/zthxxx/9ddc171d00df98cbf8b4b0d8469ce90a/raw/Microsoft_Office_2019_VL_Serializer.pkg && open ~/Downloads
-```
-
-<h2 id="Desinfección">🦠 Revisar virus en Windows con CMD</h2>
-
-```
-cd C:/ProgramData/Microsoft/Windows Defender/Platform/4.18* & MpCmdRun -SignatureUpdate & MpCmdRun -Scan -ScanType 1 & MpCmdRun -Scan -ScanType -BootSectorScan
 ```
