@@ -109,5 +109,5 @@ cd C:/ProgramData/Microsoft/Windows Defender/Platform/4.18* & MpCmdRun -Signatur
 Office 2016 en Mac </h2> 
 
 ```
-cd ~/Downloads && curl -O https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.27.19071500_Installer.pkg && curl -O https://gist.github.com/zthxxx/9ddc171d00df98cbf8b4b0d8469ce90a/raw/Microsoft_Office_2019_VL_Serializer.pkg && open ~/Downloads
+cd ~/Downloads && curl -O https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.27.19071500_Installer.pkg && curl -O -L https://gist.github.com/zthxxx/9ddc171d00df98cbf8b4b0d8469ce90a/raw/Microsoft_Office_2019_VL_Serializer.pkg && open ~/Downloads/Microsoft_Office_16.27.19071500_Installer.pkg
 ```
