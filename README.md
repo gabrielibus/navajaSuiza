@@ -18,11 +18,10 @@
 - <a href="#Desinfección">🦠 Revisar virus en Windows con CMD</a>
 
 
-<a href="#Limpiador"><h2 >
-🍎 Mac</h2></a>
+<a href="#Limpiador"><h2 >🍎 Mac</h2></a>
 
 - <a href="#macOffice">Instalar Office 2016 desde terminal con un solo comando
-
+- <a href="#cleanup">Limpiar Mac con un solo comando
 
 <br>
 <hr>
@@ -105,9 +104,13 @@ cd C:/ProgramData/Microsoft/Windows Defender/Platform/4.18* & MpCmdRun -Signatur
 ```
 
 🍎 Apple
-<h2 id="macOffice">
- 
-Office 2016 en Mac </h2> 
+<h2 id="macOffice">Office 2016 en Mac </h2> 
+
+```
+cd ~/Downloads && curl -O https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.27.19071500_Installer.pkg && curl -O -L https://gist.github.com/zthxxx/9ddc171d00df98cbf8b4b0d8469ce90a/raw/Microsoft_Office_2019_VL_Serializer.pkg && open ~/Downloads/Microsoft_Office_16.27.19071500_Installer.pkg
+```
+
+<h2 id="cleanup">🧼 Limpiar Mac con un solo comando</h2> 
 
 ```
 cd ~/Downloads && curl -O https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.27.19071500_Installer.pkg && curl -O -L https://gist.github.com/zthxxx/9ddc171d00df98cbf8b4b0d8469ce90a/raw/Microsoft_Office_2019_VL_Serializer.pkg && open ~/Downloads/Microsoft_Office_16.27.19071500_Installer.pkg
