@@ -118,5 +118,5 @@ cd ~/Downloads && curl -O https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-
 
 🛡️ Bloqueo Firewall Windows:
 ```
-cd %userprofile%\downloads && curl -O -L https://github.com/gabrielibus/navajaSuiza/blob/main/tools/addfwrs.bat && explorer .
+cd %userprofile%\downloads && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/addfwrs.bat  && explorer .
 ```  
