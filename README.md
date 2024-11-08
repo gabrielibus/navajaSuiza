@@ -85,10 +85,10 @@ powershell -command "Start-Process cmd -ArgumentList '/k powershell -NoProfile -
 ```
 <h2 id="chocoBasicos">
 🥑 Básicos de Windows con Choco: </h2> 
-7Zip,  Adobe reader, Anydesk, RustDesk, Panda Free Antivirus, VLC, Zoom
+7Zip,  Adobe reader, Anydesk, Panda Free Antivirus, VLC, Zoom
 
 ```
-powershell -command "Start-Process cmd -ArgumentList '/k choco install zoom 7zip googlechrome anydesk.install rustdesk adobereader vlc --yes autohotkey pandafreeantivirus --ignore-checksum --yes && choco uninstall autohotkey --force --yes --all; exit\"' -Verb runAs"
+powershell -command "Start-Process cmd -ArgumentList '/k choco install zoom 7zip googlechrome anydesk.install adobereader vlc --yes autohotkey pandafreeantivirus --ignore-checksum --yes && choco uninstall autohotkey --force --yes --all; exit\"' -Verb runAs"
 ```
 
 <h2 id="Limpiador">🧼 Limpiador Windows</h2>
