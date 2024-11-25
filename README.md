@@ -9,7 +9,7 @@
 <a href="#chocoAIO"><h2 >
 🍫 + 🥑 Choco y básicos de Windows con CMD</h2></a>
 - <a href="#choco">🍫 Instala Choco</a>
-- <a href="#chocoBasicos">🥑 Instala 7Zip, Adobe reader, Anydesk, Google Chrome, RustDesk, Panda Free Antivirus, VLC, Zoom</a>
+- <a href="#chocoBasicos">🥑 Instala 7Zip, Adobe reader, Anydesk, Google Chrome, Panda Free Antivirus, VLC, Zoom</a>
 
 <a href="#Limpiador"><h2 >
 👽 Otros</h2></a>
