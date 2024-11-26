@@ -70,11 +70,11 @@ cd %USERPROFILE%\Downloads && curl -O https://raw.githubusercontent.com/gabrieli
 🍫 + 🥑 Choco y básicos de Windows con CMD</h2>
 
 - <a href="#choco">🍫 Instala Choco</a>
-- <a href="#chocoBasicos">🥑 Instala 7Zip, Adobe reader, Anydesk, Google Chrome, RustDesk, Panda Free Antivirus, VLC, Zoom</a>
+- <a href="#chocoBasicos">🥑 Instala 7Zip, Adobe reader, Anydesk, Google Chrome, Panda Free Antivirus, VLC, Zoom</a>
 
 👇🏽 Este script hace todo lo de arriba ☝🏽 (para pegar en CMD/Terminal de Windows)
 ```
-powershell -command "Start-Process cmd -ArgumentList '/k powershell -NoProfile -ExecutionPolicy Bypass -Command \"[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString(''https://chocolatey.org/install.ps1'')); $env:PATH += '';'' + [System.Environment]::GetFolderPath(''CommonApplicationData'') + ''\chocolatey\bin''; choco install zoom 7zip googlechrome anydesk.install rustdesk adobereader vlc --yes; choco install autohotkey pandafreeantivirus --ignore-checksum --yes; choco uninstall autohotkey --force --yes --all; exit\"' -Verb runAs"
+powershell -command "Start-Process cmd -ArgumentList '/k powershell -NoProfile -ExecutionPolicy Bypass -Command \"[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString(''https://chocolatey.org/install.ps1'')); $env:PATH += '';'' + [System.Environment]::GetFolderPath(''CommonApplicationData'') + ''\chocolatey\bin''; choco install zoom 7zip googlechrome anydesk.install adobereader vlc --yes; choco install autohotkey pandafreeantivirus --ignore-checksum --yes; choco uninstall autohotkey --force --yes --all; exit\"' -Verb runAs"
 ```
 <br>
 <h2 id="choco">
