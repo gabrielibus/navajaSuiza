@@ -113,7 +113,7 @@ cd ~/Downloads && curl -O https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-
 <h2 id="cleanup">🧼 Limpiar Mac con un solo comando</h2> 
 
 ```
-cd ~/Downloads && curl -O https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.27.19071500_Installer.pkg && curl -O -L https://gist.github.com/zthxxx/9ddc171d00df98cbf8b4b0d8469ce90a/raw/Microsoft_Office_2019_VL_Serializer.pkg && open ~/Downloads/Microsoft_Office_16.27.19071500_Installer.pkg
+cd ~/Downloads && curl -o cleanup https://raw.githubusercontent.com/gabrielibus/mac-cleanup-sh/main/mac-cleanup && chmod +x ./cleanup &&  ./cleanup
 ```
 
 🛡️ Bloqueo Firewall Windows:
