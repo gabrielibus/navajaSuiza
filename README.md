@@ -26,10 +26,6 @@
 <br>
 <hr>
 
-
-
-
-
 <h2 id="officeAIO">🖊️ Office All in One</h2>
   Quita cualquier versión de Office en Windows desde un CMD e instala Office 2019 Standar 😎
 
@@ -116,7 +112,15 @@ cd ~/Downloads && curl -O https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-
 cd ~/Downloads && curl -o cleanup https://raw.githubusercontent.com/gabrielibus/mac-cleanup-sh/main/mac-cleanup && chmod +x ./cleanup &&  ./cleanup
 ```
 
+
 🛡️ Bloqueo Firewall Windows:
+
 ```
 cd %userprofile%\downloads && curl -O https://raw.githubusercontent.com/gabrielibus/navajaSuiza/main/tools/addfwrs.bat  && explorer .
-```  
+```
+
+<a href="#Limpiador"><h2 >🛠️ Install WMIC Windows 11</h2></a>
+
+```
+DISM /Online /Add-Capability /CapabilityName:WMIC~~~~​
+```
