@@ -58,6 +58,12 @@ cd %USERPROFILE%\Downloads && curl -O https://raw.githubusercontent.com/gabrieli
 
 ```
 <br>
+
+```
+irm https://get.activated.win | iex
+
+```
+<br>
 <br>
 
 ---
