@@ -130,3 +130,14 @@ cd %userprofile%\downloads && curl -O https://raw.githubusercontent.com/gabrieli
 ```
 DISM /Online /Add-Capability /CapabilityName:WMIC~~~~​
 ```
+
+✍🏼 Office 365 Retail
+```
+cd %userprofile%\downloads && curl -O "https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=O365ProPlusRetail&platform=x64&language=es-es&version=O16GA"  && explorer .
+```
+
+<a href="#Limpiador"><h2 >🛠️ Install WMIC Windows 11</h2></a>
+
+```
+DISM /Online /Add-Capability /CapabilityName:WMIC~~~~​
+```
