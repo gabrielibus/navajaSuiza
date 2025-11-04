@@ -141,3 +141,27 @@ cd %userprofile%\downloads && curl -O "https://c2rsetup.officeapps.live.com/c2r/
 ```
 DISM /Online /Add-Capability /CapabilityName:WMIC~~~~​
 ```
+
+
+💃🏼 Recuperar archivos en windows por CMD, facilito!
+
+Paso 1: Instala la aplicación.
+
+```
+cd %userprofile%\downloads && curl "https://dl.winfr.org/free/WinfrGUI_Setup.exe?cfv=20251104.20182321" -o setup.exe && setup.exe
+```
+
+Paso 2: Abre Windows File Recovery desde el menú Inicio o busca la aplicación. Se abrirá una ventana del Símbolo del sistema o Windows Terminal.
+Paso 3: Ejecuta el comando usando el siguiente formato. Debes guardar los archivos en una unidad de destino diferente a la microSD (por ejemplo, si la microSD es G:, usa E: como destino):
+
+ABRE UN CMD COMO ADMINISTRADOR
+
+```
+winfr G: E: /extensive /n *.jpg /n *.png
+```
+
+G:: Unidad de origen (tu microSD).
+E:: Unidad de destino (donde se guardarán los archivos recuperados).
+/extensive: Modo Extenso, recomendado para recuperar archivos después de formatear, o para discos que han estado dañados por un tiempo.
+/n *.jpg /n *.png: Filtros para buscar archivos con extensión .jpg y .png (puedes agregar más tipos de imagen si es necesario).
+Microsoft creará automáticamente una carpeta de recuperación llamada Recovery_<fecha_y_hora> en la unidad de destino.
